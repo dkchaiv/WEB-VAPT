@@ -1,0 +1,182 @@
+[
+    {
+        "title": "Missing Content-Security-Policy header",
+        "severity": "Medium",
+        "confidence": "High",
+        "endpoint": null,
+        "parameter": "",
+        "description": "The response does not set the Content-Security-Policy header.",
+        "impact": "",
+        "remediation": "",
+        "evidence": "",
+        "tool": "Custom Security Header Analyzer",
+        "owasp": "A05 - Security Misconfiguration",
+        "cwe": "CWE-693",
+        "cve": null,
+        "cvss": null,
+        "status": "Confirmed",
+        "sources": [
+            "Custom Security Header Analyzer"
+        ]
+    },
+    {
+        "title": "Missing Strict-Transport-Security header",
+        "severity": "Medium",
+        "confidence": "High",
+        "endpoint": null,
+        "parameter": "",
+        "description": "The response does not set the Strict-Transport-Security header.",
+        "impact": "",
+        "remediation": "",
+        "evidence": "",
+        "tool": "Custom Security Header Analyzer",
+        "owasp": "A02 - Cryptographic Failures",
+        "cwe": "CWE-319",
+        "cve": null,
+        "cvss": null,
+        "status": "Confirmed",
+        "sources": [
+            "Custom Security Header Analyzer"
+        ]
+    },
+    {
+        "title": "Missing X-Content-Type-Options header",
+        "severity": "Low",
+        "confidence": "High",
+        "endpoint": null,
+        "parameter": "",
+        "description": "The response does not set the X-Content-Type-Options header.",
+        "impact": "",
+        "remediation": "",
+        "evidence": "",
+        "tool": "Custom Security Header Analyzer",
+        "owasp": "A05 - Security Misconfiguration",
+        "cwe": "CWE-693",
+        "cve": null,
+        "cvss": null,
+        "status": "Confirmed",
+        "sources": [
+            "Custom Security Header Analyzer"
+        ]
+    },
+    {
+        "title": "Missing X-Frame-Options header",
+        "severity": "Low",
+        "confidence": "High",
+        "endpoint": null,
+        "parameter": "",
+        "description": "The response does not set the X-Frame-Options header.",
+        "impact": "",
+        "remediation": "",
+        "evidence": "",
+        "tool": "Custom Security Header Analyzer",
+        "owasp": "A05 - Security Misconfiguration",
+        "cwe": "CWE-1021",
+        "cve": null,
+        "cvss": null,
+        "status": "Confirmed",
+        "sources": [
+            "Custom Security Header Analyzer"
+        ]
+    },
+    {
+        "title": "Cookie missing Secure attribute",
+        "severity": "Medium",
+        "confidence": "High",
+        "endpoint": "http://demo.testfire.net/login.jsp",
+        "parameter": "",
+        "description": "Cookie 'JSESSIONID' lacks the Secure attribute.",
+        "impact": "",
+        "remediation": "",
+        "evidence": "",
+        "tool": "Custom Cookie Analyzer",
+        "owasp": "A07 - Identification and Authentication Failures",
+        "cwe": "CWE-614",
+        "cve": null,
+        "cvss": null,
+        "status": "Confirmed",
+        "sources": [
+            "Custom Cookie Analyzer"
+        ]
+    },
+    {
+        "title": "Cookies without Secure attribute - Detect",
+        "severity": "Info",
+        "confidence": "Medium",
+        "endpoint": "demo.testfire.net",
+        "parameter": "",
+        "description": "Checks whether cookies in the HTTP response contain the Secure attribute. If the Secure flag is set, it means that the cookie can only be transmitted over HTTPS\n",
+        "impact": "",
+        "remediation": "",
+        "evidence": "",
+        "tool": "Nuclei",
+        "owasp": "",
+        "cwe": "cwe-614",
+        "cve": "",
+        "cvss": null,
+        "status": "Potential",
+        "sources": [
+            "Nuclei"
+        ]
+    },
+    {
+        "title": "Apache Detection",
+        "severity": "Info",
+        "confidence": "Medium",
+        "endpoint": "http://demo.testfire.net/login.jsp",
+        "parameter": "",
+        "description": "Some Apache servers have the version on the response header. The OpenSSL version can be also obtained",
+        "impact": "",
+        "remediation": "",
+        "evidence": "",
+        "tool": "Nuclei",
+        "owasp": "",
+        "cwe": "",
+        "cve": "",
+        "cvss": null,
+        "status": "Potential",
+        "sources": [
+            "Nuclei"
+        ]
+    },
+    {
+        "title": "HTTP Missing Security Headers",
+        "severity": "Info",
+        "confidence": "Medium",
+        "endpoint": "http://demo.testfire.net/login.jsp",
+        "parameter": "",
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "impact": "",
+        "remediation": "",
+        "evidence": "",
+        "tool": "Nuclei",
+        "owasp": "",
+        "cwe": "cwe-693",
+        "cve": "",
+        "cvss": null,
+        "status": "Potential",
+        "sources": [
+            "Nuclei"
+        ]
+    },
+    {
+        "title": "Missing Cookie SameSite Strict",
+        "severity": "Info",
+        "confidence": "Medium",
+        "endpoint": "http://demo.testfire.net/login.jsp",
+        "parameter": "",
+        "description": "Identified cookies that lacked the samesite=strict attribute, which prevented enforcement of restrictions on cross-domain cookie transmission.\n",
+        "impact": "",
+        "remediation": "",
+        "evidence": "",
+        "tool": "Nuclei",
+        "owasp": "",
+        "cwe": "cwe-693",
+        "cve": "",
+        "cvss": null,
+        "status": "Potential",
+        "sources": [
+            "Nuclei"
+        ]
+    }
+]
