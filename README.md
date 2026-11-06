@@ -204,7 +204,7 @@ Generates publication-quality PDF assessment reports via ReportLab:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/kusumkumar1729/WebVAPT.git
+git clone https://github.com/dkchaiv/WebVAPT.git
 cd WebVAPT/vapt-framework
 ```
 
